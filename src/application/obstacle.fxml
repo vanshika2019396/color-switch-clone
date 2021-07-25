@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ObstacleScreenController">
+   <children>
+      <ImageView fitHeight="456.0" fitWidth="605.0" layoutX="-4.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="92.0" fitWidth="93.0" layoutX="89.0" layoutY="174.0" onMouseClicked="#restart" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@restart_button.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="108.0" layoutX="82.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@restart.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="108.0" layoutX="254.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@continue.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="93.0" layoutX="257.0" layoutY="174.0" onMouseClicked="#continueGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@continue_button.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="108.0" layoutX="413.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exit.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="367.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="97.0" fitWidth="93.0" layoutX="420.0" layoutY="174.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exit_button_2.jpeg" />
+         </image>
+      </ImageView>
+      <Text layoutX="152.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME OVER!!" wrappingWidth="342.4703369140625">
+         <font>
+            <Font name="Verdana" size="46.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.14503813881910485">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>
